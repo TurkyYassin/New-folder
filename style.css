@@ -552,7 +552,7 @@ input {
 	color: #1f1f1f;
 	text-transform: capitalize;
 	margin-bottom: 35px;
-	font-weight: 500;
+	font-weight: 700;
 	position: relative;
 }
 .footer-col h4::before{
@@ -573,7 +573,7 @@ input {
 	text-transform: capitalize;
 	color: #1f1f1f;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 400;
 	color: #1f1f1f;
 	display: block;
 	transition: all 0.3s ease;
@@ -610,10 +610,10 @@ input {
 
 .end-footer .footer-col .be {
 	font-size: 16px;
+  font-weight: 500;
 	text-transform: capitalize;
 	/* color: #1f1f1f; */
 	text-decoration: none;
-	font-weight: 300;
 	color: #1f1f1f;
 	display: block;
 	transition: all 0.3s ease;
