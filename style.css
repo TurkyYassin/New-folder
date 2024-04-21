@@ -357,6 +357,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items:center ;
+  background:url(testimonial_bg.png);
   background-color: #ddd;
   padding: 7rem;
 }
