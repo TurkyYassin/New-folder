@@ -95,11 +95,26 @@ nav ul li .h:hover {
 
 /* dropdown */
 .dropdown{
-  background: #f0f0f0;
+  background: #fff;
   position: absolute;
   z-index: 999;
   display: none;
   padding-top: 30px;
+  border-radius: 20px;
+}
+
+.dropdown .drop{
+  width: 230px;
+  margin-left: 150px;
+  background: #fff;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  border-radius: 20px;
+}
+
+.dropdown .q:hover .drop{
+  display: block;
 }
 
 .dropdown li{
@@ -115,7 +130,7 @@ ul li:hover ul.dropdown{
   display: block;
 }
 
-/* dropdown */
+/* dropdown end */
 
 header .content {
   display: flex;
