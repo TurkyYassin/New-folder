@@ -185,7 +185,7 @@ header * {
 
 /* Header End */
 
-.content {
+#content {
   height: 100vh;
   background: url("WhatsApp\ Image\ 2023-10-09\ at\ 14.15.42_e7981d1a.jpg") center center/cover no-repeat;
   position: relative;
@@ -195,7 +195,7 @@ header * {
   justify-content: center;
 }
 
-.content::before {
+#content::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -205,12 +205,12 @@ header * {
   background: rgb(0, 0, 0, 0.6);
 }
 
-.content h1 {
+#content h1 {
   font-size: 45px;
   color: #fff;
 }
 
-.content p {
+#content p {
   font-size: 18px;
   color: #fff;
   margin: 20px 0 40px;
@@ -219,7 +219,7 @@ header * {
 header * {
   z-index: 10;
 }
-.content * {
+#content * {
   z-index: 10;
 }
 
