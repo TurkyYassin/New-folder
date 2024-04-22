@@ -60,10 +60,8 @@ ul {
   color: #1256EA;
 }
 
-/* Header Start */
 header {
-  height: 100vh;
-  background: url("WhatsApp\ Image\ 2023-10-09\ at\ 14.15.42_e7981d1a.jpg") center center/cover no-repeat;
+  height: 15vh;
   position: relative;
 }
 
@@ -88,6 +86,7 @@ nav ul {
 nav ul li a {
   padding: 15px 20px;
   font-weight: 600;
+  color: #1f1f1f;
 }
 
 nav ul li a:hover {
@@ -109,15 +108,109 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
+  background: #f0f0f0;
+}
+
+
+header * {
+  z-index: 10;
+}
+/* search start */
+.search {
+    /* margin-left: 5px; */
+    margin-top: 5px;
+    border: 1px solid #1256EA;
+    border-radius: 10px;
+    width: max-content;
+    overflow: hidden;
+  }
+  
+  button {
+    /* background-color: rgb(108, 103, 103); */
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  button i {
+    width: 25px;
+    color: #1f1f1f;
+    margin-right: 7px;
+  }
+  
+  input {
+    font-size: 17px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    width: 250px;
+    transition: width 0.5s;
+  }
+  
+  .search:hover > input {
+    width: 260px;
+  }
+  /* search end */
+
+  #navbar .login a{
+    background: #fff;
+    color: #1256EA;
+    padding: 15px 25px;
+    border: 1px solid #1256EA;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: -100px;
+    text-decoration: none;
+    transition: .5s;
+  }
+  #navbar .login a:hover{
+    background:#1256EA ;
+    color: #fff;
+  }
+
+  #navbar .start a{
+    background: #1256EA;
+    color: #fff;
+    padding: 15px 25px;
+    border: 1px solid #1256EA;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 50px;
+    text-decoration: none;
+    transition: .5s;
+  }
+  #navbar .start a:hover{
+    background: #F84D07;
+  }
+
+/* Header End */
+
+.content {
+  height: 100vh;
+  background: url("WhatsApp\ Image\ 2023-10-09\ at\ 14.15.42_e7981d1a.jpg") center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: rgb(0, 0, 0, 0.6);
 }
 
-header .content h1 {
+.content h1 {
   font-size: 45px;
   color: #fff;
 }
 
-header .content p {
+.content p {
   font-size: 18px;
   color: #fff;
   margin: 20px 0 40px;
@@ -126,8 +219,12 @@ header .content p {
 header * {
   z-index: 10;
 }
+.content * {
+  z-index: 10;
+}
+
 /* search start */
-.search {
+#search {
   margin-left: 5px;
   margin-top: 5px;
   border: 1px solid #F84D07;
@@ -136,19 +233,19 @@ header * {
   overflow: hidden;
 }
 
-button {
+#search button {
   background-color: rgb(108, 103, 103);
   border: none;
   cursor: pointer;
 }
 
-button i {
+#search button i {
   width: 25px;
   color: #fff;
   margin-right: 7px;
 }
 
-input {
+#search input {
   font-size: 17px;
   height: 35px;
   border: none;
@@ -157,7 +254,7 @@ input {
   transition: width 0.5s;
 }
 
-.search:hover > input {
+#search:hover > input {
   width: 200px;
 }
 
