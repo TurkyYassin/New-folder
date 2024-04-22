@@ -89,9 +89,33 @@ nav ul li a {
   color: #1f1f1f;
 }
 
-nav ul li a:hover {
+nav ul li .h:hover {
   border-bottom: 2px solid #1256EA;
 }
+
+/* dropdown */
+.dropdown{
+  background: #f0f0f0;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding-top: 30px;
+}
+
+.dropdown li{
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #d6cfcf;
+}
+.dropdown li a:hover{
+  color: #1256EA;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+/* dropdown */
 
 header .content {
   display: flex;
