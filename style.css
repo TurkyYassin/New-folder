@@ -226,12 +226,13 @@ header * {
 
 #content {
   height: 100vh;
-  background: url("WhatsApp\ Image\ 2023-10-09\ at\ 14.15.42_e7981d1a.jpg") center center/cover no-repeat;
+  background: url("5.jpeg") center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
+  padding-left: 150px;
 }
 
 #content::before {
@@ -241,18 +242,27 @@ header * {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0, 0.6);
+  background: rgba(126, 125, 125, 0.6);
 }
 
 #content h1 {
   font-size: 45px;
-  color: #fff;
+  color: #0655ff;
 }
 
-#content p {
+.pp{
   font-size: 18px;
-  color: #fff;
+  color: #05256c;
   margin: 20px 0 40px;
+  font-weight: bolder;
+  width:500px;
+}
+
+#content .ppp {
+  font-size: 18px;
+  color: #F84D07;
+  margin: 20px 0 ;
+  font-weight: bolder;
 }
 
 header * {
@@ -267,35 +277,38 @@ header * {
   margin-left: 5px;
   margin-top: 5px;
   border: 1px solid #F84D07;
-  border-radius: 20px;
-  width: max-content;
+  border-radius: 5px;
+  width: 400px;
   overflow: hidden;
+  height: 50px;
 }
 
 #search button {
-  background-color: rgb(108, 103, 103);
+  /* background-color:rgba(126, 125, 125, 0.6); */
   border: none;
   cursor: pointer;
+  height: 50px;
+  width: 0px;
 }
 
 #search button i {
-  width: 25px;
+  width: 35px;
   color: #fff;
   margin-right: 7px;
 }
 
 #search input {
   font-size: 17px;
-  height: 35px;
+  height: 50px;
   border: none;
   text-align: center;
-  width: 250px;
+  width: 350px;
   transition: width 0.5s;
 }
 
-#search:hover > input {
+/* #search:hover > input {
   width: 200px;
-}
+} */
 
 .down{
   margin-top: 20px;
@@ -318,7 +331,6 @@ header * {
 }
 /* search end */
 
-/* Header End */
 
 /* About Start */
 .flex {
@@ -329,7 +341,7 @@ header * {
   background: #fff;
   font-size: 22px;
   font-weight: bold;
-  padding: 30px;
+  padding: 20px 30px;
   margin: 20px;
   border-radius: 10px;
 }
@@ -339,8 +351,8 @@ header * {
 
 }
 #about {
-  height: 80vh;
-  background: #1256EA;
+  height: 60vh;
+  background: linear-gradient(#4d81f2,#1256EA);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -396,7 +408,6 @@ header * {
 /* Offers Section start */
 #offers {
   height: 80vh;
-  background: url("./img/offer-background.jpg") center center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -407,7 +418,7 @@ header * {
 }
 
 #offers h2 {
-  color: #1256EA;
+  color: #1f1f1f;
   font-weight: bolder;
 }
 
@@ -426,8 +437,7 @@ header * {
   background: #1256EA;
   color: #fff;
   border-radius: 10px;
-  padding: 20px;
-
+  padding: 10px;
 }
 .uly li button{
   padding: 10px;
@@ -591,7 +601,6 @@ header * {
 }
 
 .contact{
-  border: 1px solid #ccc;
   border-radius: 20px;
   margin-bottom: 200px;
   margin-top: -80px;
@@ -609,30 +618,50 @@ header * {
 
 .contact .content form{
   flex-basis: 70%;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact .content form p{
+  margin-bottom: 30px;
 }
 
 .contact .content form .main-input{
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 10px;
   display: block;
   border: 1px solid #ccc;
   margin-bottom: 30px;
   width: 100%;
+  text-align: start;
+  font-size: 14px;
 }
 .contact .content form .main-input:focus{
   outline: none;
 }
+
+.contact .content form .nn{
+  margin: 5px;
+}
+
+.contact .content form span{
+  color: red;
+}
+
+
 .contact .content form .submit {
   width: 100px;
   background-color:#1256EA ;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 25px;
   border: none;
   display: flex;
-  margin-left: 300px;
-  border-radius: 20px;
-  text-transform: uppercase;
+  margin-left: 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .contact .content form .submit:hover{
@@ -642,13 +671,16 @@ header * {
 
 .contact .content .info {
   margin-left: 30px;
+  margin-right: 20px;
   flex-basis: 25%;
   border:1px solid #ccc ;
-  border-radius: 30px 0 0 0;
+  border-radius: 70px 0 0 0;
 }
 .contact .content .info .imge{
-  width: 200px;
-  border-radius: 30px 0 0 0;
+  width: 350px;
+  margin: 8px;
+  margin-bottom: 60px;
+  border-radius: 70px 0 0 0;
 }
 .contact .content .info h4 {
   text-transform: uppercase;
@@ -659,11 +691,10 @@ header * {
 
 .contact .content .info .phone{
   display: block;
-  color: #F84D07;
-  margin: 0 10px 10px 10px;
-
-
+  color: #1f1f1f;
+  margin: 0 10px 20px 10px;
 }
+
 
  /* Contact Us END  */
 
