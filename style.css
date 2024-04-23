@@ -405,6 +405,28 @@ header * {
 }
 /* About End */
 
+  
+ 
+  .nums {
+    width: 400px;
+    display: flex;
+    padding-left: 200px;
+  }
+  .nums .num {
+    margin-top: 30px;
+    border-right: 1px solid rgb(198, 195, 195) ;
+    color: #1f1f1f;
+    /* flex: 1; */
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 100px;
+  }
+  .nums .num span{
+    font-weight: bolder;
+    font-size: 20px;
+  }
+/* SEC2 END */
+
 /* Offers Section start */
 #offers {
   height: 80vh;
@@ -578,6 +600,34 @@ header * {
   }
 }
 /* Testimonial Section END */
+
+/* SEC2 Start */
+
+.sec2{
+  /* padding-bottom: 100px; */
+  /* margin: 20px 0; */
+  border-top: 1px solid #a9c0f4;
+  background: url(testimonial_bg.png);
+  background-color: #ddd;
+}
+.sec2 .funfact{
+  padding-left: 600px;
+}
+.sec2 .fun{
+  /* padding-top: 100px; */
+  color: #f7ae7e;
+  font-weight: 500;
+  margin-left: 150px;
+  /* margin-top: 100px; */
+  margin-bottom: 20px;
+}
+
+.sec2  h2{
+  color: #1f1f1f;
+  font-size: 38px;
+  font-weight: bolder;
+}
+/* SEC2 START  */
 
  /* Contact Us Start  */
 
