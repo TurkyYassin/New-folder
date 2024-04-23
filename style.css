@@ -631,12 +631,17 @@ header * {
 
  /* Contact Us Start  */
 
+ .conco{
+  margin-top: 30px;
+  background: url(testimonial_bg.png);
+  background-color: #ddd;
+
+ }
 #contact{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center ;
-  background-color: #fff;
   padding: 7rem;
 }
 
