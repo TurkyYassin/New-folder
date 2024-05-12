@@ -490,6 +490,27 @@ header * {
   box-shadow: 0px 0px 2px 2px #ddd ;
   padding: 10px 10px;
 }
+#offers .offers-items .two{
+  background: #fff;
+  height: 35vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 2px #ddd ;
+  padding: 10px 10px;
+}
+#offers .offers-items .three{
+  background: #fff;
+  height: 35vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 2px #ddd ;
+  padding: 10px 10px;
+}
+#offers .offers-items .four{
+  background: #fff;
+  height: 35vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 2px #ddd ;
+  padding: 10px 10px;
+}
 
 
 #offers .offers-items img {
