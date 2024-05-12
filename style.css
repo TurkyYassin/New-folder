@@ -429,7 +429,7 @@ header * {
 
 /* Offers Section start */
 #offers {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,25 +480,40 @@ header * {
   grid-template-columns: repeat(3,1fr) ;
   grid-template-rows: repeat(3,100px) ;
   gap: 30px;  
-  grid-row-gap: 150px;
-  
+  grid-row-gap: 180px;
+}
 
+#offers .offers-items .one{
+  background: #fff;
+  height: 35vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 2px #ddd ;
+  padding: 10px 10px;
 }
 
 
 #offers .offers-items img {
   width: 300px;
-  
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: all 0.8s;
 }
 
-#offers .offers-items h3 button {
-  font-size: 25px;
-  color: #1256EA;
-  margin: 15px 0;
-  background: #fff;
+#offers .offers-items img:hover{
+  opacity: 0.3;
 }
-#offers .offers-items h3 button:hover{
- color: #F84D07;
+
+#offers .offers-items h3 button a {
+  font-size: 22px;
+  color: #1f1f1f;
+  margin: 15px 0;
+  padding: 5px 0;
+  background: #fff;
+  transition: all 0.8s;
+}
+#offers .offers-items h3 button a:hover{
+ color: #1256EA
+ ;
 }
 
 #offers .offers-items p {
