@@ -60,6 +60,7 @@ ul {
   color: #1256EA;
 }
 
+/* Header Start */
 header {
   height: 15vh;
   position: relative;
@@ -94,23 +95,32 @@ nav ul li .h:hover {
 }
 
 /* dropdown */
+span i{
+    margin-left: 20px;
+    text-align: center;
+}
 .dropdown{
+    width: 190px;
   background: #fff;
   position: absolute;
   z-index: 999;
   display: none;
-  padding-top: 30px;
-  border-radius: 20px;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #eff3fa;
 }
 
 .dropdown .drop{
   width: 230px;
-  margin-left: 150px;
+  margin-left: 190px;
   background: #fff;
   position: absolute;
+  top: 10px;
   z-index: 999;
   display: none;
-  border-radius: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #eff3fa;
 }
 
 .dropdown .q:hover .drop{
@@ -119,8 +129,8 @@ nav ul li .h:hover {
 
 .dropdown li{
   display: block;
-  padding: 10px;
-  border-bottom: 1px solid #d6cfcf;
+  padding: 20px 0;
+  border-bottom: 1px solid #eff3fa;
 }
 .dropdown li a:hover{
   color: #1256EA;
@@ -147,7 +157,7 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
-  background: #f0f0f0;
+  background: #ffffff;
 }
 
 
@@ -158,22 +168,23 @@ header * {
 .search {
     /* margin-left: 5px; */
     margin-top: 5px;
-    border: 1px solid #1256EA;
+    border: 1px solid #1256EA
+    ;
     border-radius: 10px;
     width: max-content;
     overflow: hidden;
   }
   
-  button {
-    /* background-color: rgb(108, 103, 103); */
+  .but {
+    background-color: #1256EA;
+    height: 47px;
     border: none;
     cursor: pointer;
-    
   }
   
-  button i {
-    width: 25px;
-    color: #1f1f1f;
+  .but i {
+    width: 40px;
+    color: #fff;
     margin-right: 7px;
   }
   
@@ -273,6 +284,7 @@ header * {
       z-index: 999;
     }
   }
+
 
 /* Header End */
 
